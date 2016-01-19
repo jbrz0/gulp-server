@@ -8,7 +8,7 @@ A basic web server scaffolding with its only dependencies being:
 
 # Installation
 1. clone repo
-2. cd into gulp-server
+2. cd into /gulp-server
 3. run 'npm install'
-4. run gulp
+4. run 'gulp'
 
