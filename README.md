@@ -7,8 +7,9 @@ A basic web server scaffolding with its only dependencies being:
 ```
 
 # Installation
-1. clone repo
-2. cd into /gulp-server
-3. run 'npm install'
-4. run 'gulp'
+1. install gulp globally ( `npm install --global gulp` )
+2. clone repo
+3. cd into /gulp-server
+4. run `npm install`
+5. run `gulp`
 
