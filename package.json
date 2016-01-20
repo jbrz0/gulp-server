@@ -1,6 +1,6 @@
 {
-  "name": "Basic Gulp Server",
-  "version": "1",
+  "name": "gulp-server",
+  "version": "1.0.0",
   "description": "A basic gulp server scaffolding for web apps.",
   "repository": {
     "type": "git",
