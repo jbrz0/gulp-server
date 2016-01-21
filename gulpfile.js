@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
   gutil = require('gulp-util'),
   webserver = require('gulp-webserver');
+  sass = require('gulp-sass');
 
 gulp.task('js', function() {
   gulp.src('app/js/**/*');
@@ -29,4 +30,22 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('default', ['watch', 'html', 'js', 'css', 'webserver']);
+var input = 'app/stylesheets/style.scss';
+var output = 'app/css';
+
+gulp.task('sass', function () {
+  return gulp
+    .src(input)
+    .pipe(sass())
+    .pipe(gulp.dest(output));
+});
+
+gulp.task('watch', function() {
+  return gulp
+    .watch(input, ['sass'])
+    .on('change', function(event) {
+      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+    });
+});
+
+gulp.task('default', ['watch', 'html', 'js', 'css', 'webserver', 'sass', 'watch']);

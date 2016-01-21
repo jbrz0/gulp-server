@@ -1,9 +1,12 @@
 # Description
-A basic web server scaffolding with its only dependencies being:
+A basic web server setup with sass
+
+Dependencies:
 ```
 'gulp'
 'gulp-utils'
 'gulp-webserver'
+`gulp-sass`
 ```
 
 # Installation
@@ -13,3 +16,6 @@ A basic web server scaffolding with its only dependencies being:
 4. run `npm install`
 5. run `gulp`
 
+# Sass stylesheets
+- @import all `.scss` files in `style.scss` 
+- All changes saved to `style.scss` and other `.scss` files get compiled to `style.css` in `css` folder
